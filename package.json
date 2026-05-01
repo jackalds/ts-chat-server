@@ -1,0 +1,49 @@
+{
+  "name": "ts-chat-server",
+  "version": "1.0.0",
+  "description": "Chat server by Paul Ferreira",
+  "license": "ISC",
+  "author": "Paul Ferreira",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackalds/ts-chat-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jackalds/ts-chat-server/issues"
+  },
+  "homepage": "https://github.com/jackalds/ts-chat-server#readme",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec tsx src/server.ts"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/express-serve-static-core": "^5.1.1",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.6.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.2.1",
+    "express": "^5.2.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.5.0",
+    "mongoose-unique-validator": "^6.1.1",
+    "nodemon": "^3.1.14",
+    "npm": "^11.13.0",
+    "prettier": "^3.8.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.3"
+  }
+}
