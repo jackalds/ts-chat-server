@@ -55,7 +55,7 @@ export const login = async (req, res, next) => {
       expiresIn: '1h',
     });
 
-    res.json({
+    res.status(200).json({
       token,
       user: { id: user._id, username: user.username },
     });

@@ -4,7 +4,7 @@ import User from '../models/Users.js';
 export const getAllUsers = async (req, res, next) => {
   try {
     const users = await User.find({});
-    res.json(users);
+    res.status(200).json(users);
   } catch (error) {
     next(error);
   }
@@ -17,7 +17,7 @@ export const getUsersByUsername = async (req, res, next) => {
       { username: { $regex: username, $options: 'i' } },
       { _id: 1, username: 1 },
     );
-    res.json(users);
+    res.status(200).json(users);
   } catch (error) {
     next(error);
   }

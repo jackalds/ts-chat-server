@@ -62,4 +62,4 @@ Point your chat client at this server’s base URL (same host and port as `PORT`
 
 This project’s Socket.IO server allows the client origin from `CLIENT_URL` (defaults to `http://localhost:5173`).
 
-Get the frontend from `XXX` (replace with your chat client repo or path).
+Get the frontend from `https://github.com/jackalds/chat-client` (replace with your chat client repo or path).
